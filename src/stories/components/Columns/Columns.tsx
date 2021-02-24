@@ -1,4 +1,5 @@
 import React from "react";
+import "./columns.scss"
 
 export interface ColumnsProps {
     /**
@@ -9,7 +10,7 @@ export interface ColumnsProps {
 
 export const Columns: React.FC<ColumnsProps> = (props: ColumnsProps) => {
     return(
-        <div>
+        <div className="Columns">
             {props.children}
         </div>
     )

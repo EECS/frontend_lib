@@ -1,5 +1,5 @@
 import React from 'react'
-import "./column.css"
+import "./column.scss"
 
 export interface ColumnProps {
     /**Children in Column.*/
@@ -21,7 +21,7 @@ export const Column: React.FC<ColumnProps> = (props: ColumnProps) => {
 
     const border = props.border && 
     `${props.border.borderType} ${props.border.borderSize} ${props.border.borderColor}`;
-    
+
     return (
         <div className={`Column is-${props.size}`} style={{
             border: border

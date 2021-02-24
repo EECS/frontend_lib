@@ -1,0 +1,7 @@
+.Column{
+    width: 100%;
+}
+
+.Column.is-1{
+    width: calc(1/12 * 100%);
+}
