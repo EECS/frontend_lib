@@ -11,8 +11,8 @@ export default {
 
 const Template: Story<ColumnProps> = (args: any) => <Column {...args} />;
 
-export const Basic = Template.bind({});
-Basic.args = {
+export const BasicColumn = Template.bind({});
+BasicColumn.args = {
     children: "test",
     size: "full",
     border: {
