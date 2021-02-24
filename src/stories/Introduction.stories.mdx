@@ -1,12 +1,12 @@
-import { Meta } from '@storybook/addon-docs/blocks';
-import Code from './assets/code-brackets.svg';
-import Colors from './assets/colors.svg';
-import Comments from './assets/comments.svg';
-import Direction from './assets/direction.svg';
-import Flow from './assets/flow.svg';
-import Plugin from './assets/plugin.svg';
-import Repo from './assets/repo.svg';
-import StackAlt from './assets/stackalt.svg';
+import { Meta } from "@storybook/addon-docs/blocks";
+import Code from "./assets/code-brackets.svg";
+import Colors from "./assets/colors.svg";
+import Comments from "./assets/comments.svg";
+import Direction from "./assets/direction.svg";
+import Flow from "./assets/flow.svg";
+import Plugin from "./assets/plugin.svg";
+import Repo from "./assets/repo.svg";
+import StackAlt from "./assets/stackalt.svg";
 
 <Meta title="Example/Introduction" />
 
@@ -24,9 +24,9 @@ import StackAlt from './assets/stackalt.svg';
   }
 
   .link-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: Column;
+    Column-template-columns: 1fr;
+    Column-template-rows: 1fr 1fr;
     row-gap: 10px;
   }
 
@@ -34,15 +34,15 @@ import StackAlt from './assets/stackalt.svg';
     .link-list {
       row-gap: 20px;
       column-gap: 20px;
-      grid-template-columns: 1fr 1fr;
+      Column-template-columns: 1fr 1fr;
     }
   }
 
   @media all and (-ms-high-contrast:none) {
   .link-list {
-      display: -ms-grid;
-      -ms-grid-columns: 1fr 1fr;
-      -ms-grid-rows: 1fr 1fr;
+      display: -ms-Column;
+      -ms-Column-columns: 1fr 1fr;
+      -ms-Column-rows: 1fr 1fr;
     }
   }
 
@@ -182,14 +182,22 @@ We recommend building UIs with a [**component-driven**](https://componentdriven.
       Configure, customize, and extend
     </span>
   </a>
-  <a className="link-item" href="https://www.learnstorybook.com" target="_blank">
+  <a
+    className="link-item"
+    href="https://www.learnstorybook.com"
+    target="_blank"
+  >
     <img src={Direction} alt="direction" />
     <span>
       <strong>In-depth guides</strong>
       Best practices from leading teams
     </span>
   </a>
-  <a className="link-item" href="https://github.com/storybookjs/storybook" target="_blank">
+  <a
+    className="link-item"
+    href="https://github.com/storybookjs/storybook"
+    target="_blank"
+  >
     <img src={Code} alt="code" />
     <span>
       <strong>GitHub project</strong>
@@ -206,6 +214,6 @@ We recommend building UIs with a [**component-driven**](https://componentdriven.
 </div>
 
 <div className="tip-wrapper">
-  <span className="tip">Tip</span>Edit the Markdown in{' '}
+  <span className="tip">Tip</span>Edit the Markdown in{" "}
   <code>src/stories/Introduction.stories.mdx</code>
 </div>
